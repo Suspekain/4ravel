@@ -28,4 +28,5 @@ Route::get('nblog/{id}/{nombre?}', function ($id, $nombre='anonimo') {
 })->where(array('nombre'=>'[a-zA-Z]+','id'=>'[0-9]+'))->name('nblog');
 
 Route::get('/saludo', 'SaludoController@Saludo')->name('saludo');
-Route::get('/saludoconnombre/{nombre}', 'SaludoController@SaludoNombre')->name('saludonombre');
+Route::get('/saludonombre/{nombre}', 'SaludoController@SaludoNombre')->name('saludonombre');
+Route::get('/saludonombrecolor/{nombre}/{color}', 'SaludoController@SaludoNombreColor')->name('saludonombrecolor');

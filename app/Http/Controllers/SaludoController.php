@@ -13,4 +13,8 @@ class SaludoController extends Controller
   public function SaludoNombre($nombre){
     return view('saludonombre', ['nombre' => $nombre]);
   }
+
+  public function SaludoNombreColor($nombre, $color){
+    return view('saludonombrecolor', ['nombre' => $nombre, 'color' => $color]);
+  }
 }
