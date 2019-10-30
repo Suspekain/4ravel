@@ -19,6 +19,6 @@ Route::get('contacto', function () {
     return view('contacto');
 })->name('contacto');
 
-Route::get('blog/{identificador}', function () {
-    return view('blog');
+Route::get('blog/{id}', function ($id) {
+    return view('blog', ['id' => $id]);
 })->name('blog');
