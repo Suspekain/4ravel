@@ -101,6 +101,7 @@
                 </div>
                 <div class="links">
                     <a href="{{route('saludo')}}">Saludo</a>
+                    <a href="{{route('saludonombre',['Ekain'])}}">Saludo con nombre</a>
                 </div>
             </div>
         </div>
