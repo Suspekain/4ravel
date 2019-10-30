@@ -99,6 +99,7 @@
                 <div class="title m-b-md">
                   Tarea 4.2
                 </div>
+                <br><br>
                 <div class="links">
                     <a href="{{route('saludo')}}">Saludo</a>
                     <a href="{{route('saludonombre',['Ekain'])}}">Saludo con nombre</a>
