@@ -26,3 +26,5 @@ Route::get('blog/{id}', function ($id) {
 Route::get('nblog/{id}/{nombre?}', function ($id, $nombre='anonimo') {
     return view('nblog', ['id' => $id, 'nombre' => $nombre]);
 })->where(array('nombre'=>'[a-zA-Z]+','id'=>'[0-9]+'))->name('nblog');
+
+Route::get('/saludo', 'SaludoController@Saludo')->name('saludo');

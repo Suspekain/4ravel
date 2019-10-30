@@ -96,6 +96,12 @@
                     <a href="{{route('blog','1')}}">Blog</a>
                     <a href="{{route('nblog',[1,'Ekain'])}}">Blog con nombre</a>
                 </div>
+                <div class="title m-b-md">
+                  Tarea 4.2
+                </div>
+                <div class="links">
+                    <a href="{{route('saludo')}}">Saludo</a>
+                </div>
             </div>
         </div>
     </body>
