@@ -12,17 +12,23 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  return view('welcome');
 });
 
 Route::get('contacto', function () {
-    return view('contacto');
+  return view('contacto');
 })->name('contacto');
 
 Route::get('blog/{id}', function ($id) {
-    return view('blog', ['id' => $id]);
+  return view('blog', ['id' => $id]);
 })->name('blog');
 
 Route::get('nblog/{id}/{nombre}', function ($id, $nombre) {
-    return view('blog', ['id' => $id, 'nombre' => $nombre]);
+  if (is_numeric($id)) {
+    if (condition) {
+      return view('blog', ['id' => $id, 'nombre' => $nombre]);
+    }
+  } else {
+    return 'El identificador tiene que ser un numero!';
+  }
 })->name('nblog');

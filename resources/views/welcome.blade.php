@@ -87,7 +87,7 @@
                 <div class="links">
                     <a href="{{route('contacto')}}">Contacto</a>
                     <a href="{{route('blog','1')}}">Blog</a>
-                    <a href="{{route('nblog',['1','Ekain'])}}">nBlog</a>
+                    <a href="{{route('nblog',[1,'Ekain'])}}">nBlog</a>
                 </div>
             </div>
         </div>
