@@ -44,8 +44,12 @@
                 text-align: center;
             }
 
-            .title {
+            .izena {
                 font-size: 84px;
+            }
+
+            .title {
+                font-size: 64px;
             }
 
             .links > a {
@@ -80,14 +84,17 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                <div class="izena m-b-md">
+                    Ekain Susperregi
                 </div>
 
+                <div class="title m-b-md">
+                  Tarea 4.1
+                </div>
                 <div class="links">
                     <a href="{{route('contacto')}}">Contacto</a>
                     <a href="{{route('blog','1')}}">Blog</a>
-                    <a href="{{route('nblog',[1,'Ekain'])}}">nBlog</a>
+                    <a href="{{route('nblog',[1,'Ekain'])}}">Blog con nombre</a>
                 </div>
             </div>
         </div>

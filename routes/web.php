@@ -23,12 +23,6 @@ Route::get('blog/{id}', function ($id) {
   return view('blog', ['id' => $id]);
 })->name('blog');
 
-Route::get('nblog/{id}/{nombre}', function ($id, $nombre) {
-  if (is_numeric($id)) {
-    if (condition) {
-      return view('blog', ['id' => $id, 'nombre' => $nombre]);
-    }
-  } else {
-    return 'El identificador tiene que ser un numero!';
-  }
-})->name('nblog');
+Route::get('nblog/{id}/{nombre?}', function ($id, $nombre='anonimo') {
+    return view('nblog', ['id' => $id, 'nombre' => $nombre]);
+})->where(array('nombre'=>'[a-zA-Z]+','id'=>'[0-9]+'))->name('nblog');
