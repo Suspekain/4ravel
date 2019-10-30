@@ -22,3 +22,7 @@ Route::get('contacto', function () {
 Route::get('blog/{id}', function ($id) {
     return view('blog', ['id' => $id]);
 })->name('blog');
+
+Route::get('nblog/{id}/{nombre}', function ($id, $nombre) {
+    return view('blog', ['id' => $id, 'nombre' => $nombre]);
+})->name('nblog');

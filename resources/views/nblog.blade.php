@@ -66,7 +66,7 @@
 <body>
   <div class="content">
     <div class="title m-b-md">
-      Este es el articulo numero {{$id}} {{$nombre}}
+      Este es el articulo numero {{$id}} de {{$nombre}}
     </div>
   </div>
 </body>
