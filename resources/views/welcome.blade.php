@@ -112,6 +112,7 @@
                 <div class="links">
                     <a href="{{route('formulario')}}">Formulario [get]</a>
                     <a href="{{route('formulariopost')}}">Formulario [post]</a>
+                    <a href="{{route('formulariopostmisma')}}">Formulario [post] Misma vista</a>
                 </div>
             </div>
         </div>

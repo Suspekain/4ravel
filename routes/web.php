@@ -37,3 +37,5 @@ Route::get('/formulario', 'FormularioController@Formulario')->name('formulario')
 Route::get('/formulariomostrar', 'FormularioController@FormularioMostrar')->name('formulariomostrar');
 Route::get('/formulariopost', 'FormularioController@FormularioPost')->name('formulariopost');
 Route::post('/formulariopostmostrar', 'FormularioController@FormularioPostMostrar')->name('formulariopostmostrar');
+Route::get('/formulariopostmisma', 'FormularioController@FormularioPostMisma')->name('formulariopostmisma');
+Route::post('/formulariopostmismamostrar', 'FormularioController@FormularioPostMismaMostrar')->name('formulariopostmismamostrar');
