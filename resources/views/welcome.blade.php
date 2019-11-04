@@ -89,21 +89,29 @@
                 </div>
 
                 <div class="title m-b-md">
-                  Tarea 4.1
+                  Tarea 4.1 - Rutas y Vistas
                 </div>
                 <div class="links">
                     <a href="{{route('contacto')}}">Contacto</a>
                     <a href="{{route('blog','1')}}">Blog</a>
                     <a href="{{route('nblog',[1,'Ekain'])}}">Blog con nombre</a>
                 </div>
-                <div class="title m-b-md">
-                  Tarea 4.2
-                </div>
                 <br><br>
+                <div class="title m-b-md">
+                  Tarea 4.2 - Rutas Vista Controlador
+                </div>
                 <div class="links">
                     <a href="{{route('saludo')}}">Saludo</a>
                     <a href="{{route('saludonombre',['Ekain'])}}">Saludo con nombre</a>
                     <a href="{{route('saludonombrecolor',['Ekain', 'ff7070'])}}">Saludo con nombre y color</a>
+                </div>
+                <br><br>
+                <div class="title m-b-md">
+                  Tarea 4.3 - Formularios
+                </div>
+                <div class="links">
+                    <a href="{{route('formulario')}}">Formulario [get]</a>
+                    <a href="{{route('formulariopost')}}">Formulario [post]</a>
                 </div>
             </div>
         </div>

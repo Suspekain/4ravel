@@ -30,3 +30,8 @@ Route::get('nblog/{id}/{nombre?}', function ($id, $nombre='anonimo') {
 Route::get('/saludo', 'SaludoController@Saludo')->name('saludo');
 Route::get('/saludonombre/{nombre}', 'SaludoController@SaludoNombre')->name('saludonombre');
 Route::get('/saludonombrecolor/{nombre}/{color}', 'SaludoController@SaludoNombreColor')->name('saludonombrecolor');
+
+Route::get('/formulario', 'FormularioController@Formulario')->name('formulario');
+Route::get('/formulariomostrar', 'FormularioController@FormularioMostrar')->name('formulariomostrar');
+Route::get('/formulariopost', 'FormularioController@FormularioPost')->name('formulariopost');
+Route::get('/formulariopostmostrar', 'FormularioController@FormularioPostMostrar')->name('formulariopostmostrar');
