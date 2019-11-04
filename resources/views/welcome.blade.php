@@ -114,6 +114,14 @@
                     <a href="{{route('formulariopost')}}">Formulario [post]</a>
                     <a href="{{route('formulariopostmisma')}}">Formulario [post] Misma vista</a>
                 </div>
+                <br><br>
+                <div class="title m-b-md">
+                  Tarea 4.4 - Formularios con validación
+                </div>
+                <div class="links">
+                    
+                </div>
+
             </div>
         </div>
     </body>
