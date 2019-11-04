@@ -15,7 +15,10 @@ class FormularioController extends Controller
   public function FormularioPost(){
     return view('formulariopost');
   }
-  public function FormularioPostMostrar(){
-    return view('formulariopostmostrar');
+  public function FormularioPostMostrar(Request $request){
+    $nombre = $request->input('nombre')." ".$request->input('apellido');
+    $str = file_get_contents('saludos.json');
+    $idiomas = json_decode($str,true);
+    return view('formulariopostmostrar', ['nombre' => $nombre, 'idiomas' => $idiomas]);
   }
 }

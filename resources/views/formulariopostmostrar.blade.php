@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="/saludos.json">
 
+  </script>
   <title>Laravel</title>
 
   <!-- Fonts -->
@@ -66,7 +68,9 @@
 <body>
   <div class="content">
     <div class="title m-b-md">
-      Kaixo {{$_POST["nombre"] . " " . $_POST["apellido"] . "!"}}
+      @foreach ($idiomas as $idioma)
+      {{$idioma['saludo'] . " " . $nombre}}<br>
+      @endforeach
     </div>
   </div>
 </body>

@@ -27,11 +27,13 @@ Route::get('nblog/{id}/{nombre?}', function ($id, $nombre='anonimo') {
   return view('nblog', ['id' => $id, 'nombre' => $nombre]);
 })->where(array('nombre'=>'[a-zA-Z]+','id'=>'[0-9]+'))->name('nblog');
 
+//4.2
 Route::get('/saludo', 'SaludoController@Saludo')->name('saludo');
 Route::get('/saludonombre/{nombre}', 'SaludoController@SaludoNombre')->name('saludonombre');
 Route::get('/saludonombrecolor/{nombre}/{color}', 'SaludoController@SaludoNombreColor')->name('saludonombrecolor');
 
+//4.3
 Route::get('/formulario', 'FormularioController@Formulario')->name('formulario');
 Route::get('/formulariomostrar', 'FormularioController@FormularioMostrar')->name('formulariomostrar');
 Route::get('/formulariopost', 'FormularioController@FormularioPost')->name('formulariopost');
-Route::get('/formulariopostmostrar', 'FormularioController@FormularioPostMostrar')->name('formulariopostmostrar');
+Route::post('/formulariopostmostrar', 'FormularioController@FormularioPostMostrar')->name('formulariopostmostrar');

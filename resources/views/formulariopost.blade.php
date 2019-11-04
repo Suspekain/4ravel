@@ -69,7 +69,8 @@
       Formulario
     </div>
     <form class="" action="formulariopostmostrar" method="post">
-      <label>p Nombre: </label><input type="text" name="nombre" value="">
+      @csrf
+      <label> Nombre: </label><input type="text" name="nombre" value="">
       <label> Apellido: </label><input type="text" name="apellido" value="">
       <input type="submit" value="Enviar">
     </form>
