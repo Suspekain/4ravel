@@ -117,9 +117,12 @@
                 <br><br>
                 <div class="title m-b-md">
                   Tarea 4.4 - Formularios con validación
+                  <div class="links">
+                      <a href="{{route('validacion')}}">Validacion</a>
+                  </div>
                 </div>
                 <div class="links">
-                    
+
                 </div>
 
             </div>

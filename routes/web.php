@@ -39,3 +39,5 @@ Route::get('/formulariopost', 'FormularioController@FormularioPost')->name('form
 Route::post('/formulariopostmostrar', 'FormularioController@FormularioPostMostrar')->name('formulariopostmostrar');
 Route::get('/formulariopostmisma', 'FormularioController@FormularioPostMisma')->name('formulariopostmisma');
 Route::post('/formulariopostmismamostrar', 'FormularioController@FormularioPostMismaMostrar')->name('formulariopostmismamostrar');
+
+Route::get('/validacion', 'ValidacionController@Validacion')->name('validacion');
